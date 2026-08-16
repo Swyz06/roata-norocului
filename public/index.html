@@ -1,1 +1,8 @@
-
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Roata Norocului</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="app"><header><div class="badge">🎁 MINI GAME</div><h1>Roata Norocului</h1><p>Introdu prenumele și încearcă-ți norocul!</p></header><main>
+<section id="start" class="card"><h2>Participă la extragere</h2><p class="muted">Ai o singură încercare.</p><form id="form"><label for="name">Prenumele tău</label><input id="name" maxlength="30" autocomplete="given-name" placeholder="Ex. Andrei" required><button>Continuă →</button></form></section>
+<section id="game" class="game hidden"><div class="wheel-wrap"><div class="pointer">▼</div><canvas id="wheel" width="520" height="520"></canvas></div><div class="player">Jucător: <strong id="player"></strong></div><button id="spin">🎯 ÎNVÂRTE ROATA</button><p id="status" class="muted"></p></section>
+<section id="result" class="card hidden"><div class="confetti">🎉</div><p class="eyebrow">FELICITĂRI!</p><h2 id="winner"></h2><div class="prize" id="prize"></div><p class="muted">Rezultatul a fost înregistrat.</p></section>
+<section id="already" class="card hidden"><div class="confetti">🔒</div><h2>Ai participat deja</h2><p id="alreadyText" class="muted"></p></section>
+<section class="card winners"><div class="section-title"><div><p class="eyebrow">LIVE</p><h2>Câștigători</h2></div><span id="count">0</span></div><div id="list" class="winner-list"></div></section>
+</main><footer>Roata Norocului</footer></div><script src="app.js"></script></body></html>
